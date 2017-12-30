@@ -1,5 +1,5 @@
 <?php
-namespace njpanderson\VarnishConnect;
+namespace njpanderson\VarnishConnect\Socket;
 
 /**
  * Sends and receives data to varnish over the administration port
