@@ -99,7 +99,7 @@ class Socket {
 		if ($response['code'] === self::CLIS_OK) {
 			$this->auth = true;
 		} else {
-			throw new Exception('Authentication failed.');
+			throw new \Exception('Authentication failed.');
 		}
 	}
 
@@ -136,7 +136,7 @@ class Socket {
 		if (empty($expectedResponseCode) || $response['code'] === $expectedResponseCode) {
 			return $response;
 		} else {
-			throw new Exception('Invalid response from server');
+			throw new \Exception('Invalid response from server');
 		}
 	}
 
@@ -182,7 +182,7 @@ class Socket {
 
 	private function checkAuth() {
 		if (!$this->fp || !$this->auth) {
-			throw new Exception('Connection has not yet taken place. Have you connected with connect()?');
+			throw new \Exception('Connection has not yet taken place. Have you connected with connect()?');
 		}
 	}
 }
