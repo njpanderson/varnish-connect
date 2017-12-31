@@ -44,7 +44,7 @@ class Socket {
 		// stream_set_timeout($this->fp, 2);
 
 		if (!$this->fp) {
-			throw new Exception('Socket error: ' . $errstr . '(' . $errno . ')');
+			throw new \Exception('Socket error: ' . $errstr . '(' . $errno . ')');
 		}
 
 		// get initial authentication response and authenticate
