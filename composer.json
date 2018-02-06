@@ -8,5 +8,8 @@
 		"psr-4": {
 			"njpanderson\\VarnishConnect\\": "src"
 		}
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "^3.2"
 	}
 }
